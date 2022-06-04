@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+  overflow-y: hidden;
+}
+body main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+body main section#left-side {
+  width: 50%;
+  max-width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F7FAFC;
+}
+@media screen and (max-width: 800px) {
+  body main section#left-side {
+    display: none;
+  }
+}
+body main section#left-side .figure-bg {
+  margin: auto;
+}
+body main section#left-side .figure-bg img {
+  position: relative;
+  width: 100%;
+  -webkit-animation: LeftToRight 1.5s;
+          animation: LeftToRight 1.5s;
+}
+@-webkit-keyframes LeftToRight {
+  0% {
+    left: -15rem;
+    opacity: 0;
+  }
+  100% {
+    left: 0rem;
+    opacity: 1;
+  }
+}
+@keyframes LeftToRight {
+  0% {
+    left: -15rem;
+    opacity: 0;
+  }
+  100% {
+    left: 0rem;
+    opacity: 1;
+  }
+}
+body main section#right-side {
+  width: 50%;
+  max-width: 50%;
+  height: 100%;
+  padding: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  body main section#right-side {
+    padding: 4rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  body main section#right-side {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  body main section#right-side {
+    padding: 1rem;
+  }
+}
+body main section#right-side .login {
+  width: 50vw;
+}
+@media screen and (min-width: 1920px) {
+  body main section#right-side .login {
+    width: 18vw;
+  }
+}
+@media screen and (max-width: 1920px) {
+  body main section#right-side .login {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  body main section#right-side .login {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  body main section#right-side .login {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 425px) {
+  body main section#right-side .login {
+    width: 100%;
+  }
+}
+@-webkit-keyframes fadeInLogin {
+  0% {
+    transform: translateZ(-1400px) translateY(800px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeInLogin {
+  0% {
+    transform: translateZ(-1400px) translateY(800px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+body main section#right-side .login__box-texts {
+  font-family: "Merriweather", serif;
+  margin-bottom: 2.4375rem;
+  position: relative;
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    top: -5rem;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 0rem;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    top: -5rem;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 0rem;
+  }
+}
+body main section#right-side .login__box-texts P {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.438rem;
+}
+body main section#right-side .login__box-texts h1 {
+  font-size: 1.625rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 425px) {
+  body main section#right-side .login__box-texts h1 {
+    font-size: 1.4rem;
+  }
+}
+body main section#right-side .login__inputs {
+  position: relative;
+  -webkit-animation: fadeInLogin 1.5s ease-in-out both;
+  animation: fadeInLogin 1.5s ease-in-out both;
+  font-weight: 400;
+}
+body main section#right-side .login__inputs label {
+  width: 100%;
+  font-size: 1rem;
+  display: block;
+}
+body main section#right-side .login__inputs input {
+  width: 100%;
+  font-size: 0.9rem;
+  display: block;
+  padding: 1rem;
+  margin: 0.625rem 0;
+  border: 1px solid #E8E8E8;
+  border-radius: 5px;
+  color: #1A202C;
+}
+body main section#right-side .login__functions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin: 1.813rem 0;
+  position: relative;
+  -webkit-animation: fadeInLogin 1.5s ease-in-out both;
+  animation: fadeInLogin 1.5s ease-in-out both;
+}
+body main section#right-side .login__functions .remember {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main section#right-side .login__functions .remember span {
+  margin-left: 0.688rem;
+}
+body main section#right-side .login__functions .lost-password {
+  text-decoration: none;
+  color: #2B6CB0;
+  position: relative;
+}
+body main section#right-side .login__options button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  padding: 0.8rem 0;
+  margin: 0.9rem 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.25s;
+  -webkit-animation: fadeInLogin 1.5s ease-in-out both;
+  animation: fadeInLogin 1.5s ease-in-out both;
+}
+@media screen and (max-width: 425px) {
+  body main section#right-side .login__options button {
+    font-size: 0.8rem;
+  }
+}
+body main section#right-side .login__options .btn-entrar {
+  border: 2px solid #04C35C;
+  background-color: #04C35C;
+}
+body main section#right-side .login__options .btn-entrar:hover {
+  background-color: #FFFFFF;
+  color: #04C35C;
+}
+body main section#right-side .login__options .btn-login-google {
+  border: 2px solid #1A202C;
+  background-color: #1A202C;
+}
+body main section#right-side .login__options .btn-login-google:hover {
+  background-color: #FFFFFF;
+  color: #1A202C;
+}
+body main section#right-side .login__options .btn-login-google img {
+  margin: 0 0.6rem;
+}
+body main section#right-side .sign-up {
+  -webkit-animation: fadeInLogin 2s ease-in-out both;
+  animation: fadeInLogin 2s ease-in-out both;
+  position: absolute;
+  bottom: 3rem;
+  transition: 0.4s;
+}
+body main section#right-side .sign-up__link {
+  position: relative;
+  text-decoration: none;
+  color: #2B6CB0;
+}
+body main section#right-side .sign-up__link:hover::after,
+body main section#right-side .lost-password:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1.5px;
+  left: 0;
+  bottom: -0.3rem;
+  background-color: #2B6CB0;
+  -webkit-animation: LinkHover 0.5s;
+          animation: LinkHover 0.5s;
+}
+@-webkit-keyframes LinkHover {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes LinkHover {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
